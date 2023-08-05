@@ -1,0 +1,36 @@
+2023-07-31T02:32:17+00:00 CRITICAL Uncaught Error: Class "WC_Tax" not found in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php:696
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-taxes-controller.php(74): WC_REST_Taxes_V1_Controller->get_item_schema()
+#1 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/rest-api/endpoints/class-wp-rest-controller.php(388): WC_REST_Taxes_Controller->get_item_schema()
+#2 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php(712): WP_REST_Controller->get_context_param()
+#3 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/plugins/woocommerce/src/Admin/API/Taxes.php(33): WC_REST_Taxes_V1_Controller->get_collection_params()
+#4 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php(49): Automattic\WooCommerce\Admin\API\Taxes->get_collection_params()
+#5 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/plugins/woocommerce/src/Admin/API/Init.php(144): WC_REST_Taxes_V1_Controller->register_routes()
+#6 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp-hook.php(308): Automattic\WooCommerce\Admin\API\Init->rest_api_init(Object(WP_REST_Server))
+#7 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/rest-api.php(577): do_action('rest_api_init', Object(WP_REST_Server))
+#10 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/rest-api.php(403): rest_get_server()
+#11 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp-hook.php(308): rest_api_loaded(Object(WP))
+#12 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp.php(399): do_action_ref_array('parse_request', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp.php(780): WP->parse_request('')
+#16 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/functions.php(1334): WP->main('')
+#17 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-blog-header.php(16): wp()
+#18 /Applications/XAMPP/xamppfiles/htdocs/lebabo/index.php(17): require('/Applications/X...')
+#19 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-taxes-v1-controller.php on line 696
+
+2023-07-31T03:25:14+00:00 CRITICAL Uncaught Error: Undefined constant "get_stylesheet_directory_uri" in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/header.php:31
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(783): require_once()
+#1 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', true, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/page-home.php(5): get_header()
+#4 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template-loader.php(106): include('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-blog-header.php(19): require_once('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/lebabo/index.php(17): require('/Applications/X...')
+#7 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/header.php on line 31
+

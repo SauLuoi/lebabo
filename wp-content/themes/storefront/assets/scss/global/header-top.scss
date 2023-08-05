@@ -1,0 +1,22 @@
+.top-banner {
+  text-align: center;
+  background: #595959;
+  color: white;
+  font-family: 'Magda', sans-serif;
+  font-weight: bold;
+  height: auto;
+  line-height: 30px;
+
+  @media (max-width: 992px) {
+    line-height: 18px;
+    font-weight: normal;
+  }
+
+  span {
+    color: #fff;
+  }
+
+  > span:not(:first-of-type) {
+    display: none;
+  }
+}

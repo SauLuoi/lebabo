@@ -1,0 +1,49 @@
+.shopping-bag {
+  background: url("../images/ico/ico-bag.png") no-repeat 0 0;
+  width: 18px;
+  height: 22px;
+  background-size: 18px 22px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.ico-envelope {
+  background: url("../images/ico/ico-envelope.png") no-repeat 0 0;
+  width: 16px;
+  height: 14px;
+  background-size: 16px 14px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.ico-account {
+  background: url("../images/ico/ico-account.png") no-repeat 0 0;
+  width: 12px;
+  height: 17px;
+  background-size: 12px 17px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.ico_search.input[type=submit] {
+  background: url("../images/ico/ico-search.png") !important;
+  height: 17px;
+  background-size: 12px 17px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  width: 17px;
+  background-repeat: no-repeat;
+}
+
+.ico-menu {
+  display: block;
+  float: left;
+  width: 81px;
+  height: 79px;
+  background: url("../images/ico/ico-menu.png") no-repeat center center;
+  background-size: 21px 18px;
+}

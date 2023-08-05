@@ -1,0 +1,18 @@
+@mixin flex($align, $justify) {
+  display: flex;
+  align-items: $align;
+  -moz-align-items: $align;
+  -webkit-align-items: $align;
+  -o-align-items: $align;
+  -ms-align-items: $align;
+  justify-content: $justify;
+  -moz-justify-content: $justify;
+  -webkit-justify-content: $justify;
+  -o-justify-content: $justify;
+  -ms-justify-content: $justify;
+}
+
+@mixin grid-repeat($column) {
+  display: grid;
+  grid-template-columns: repeat($column,1fr);
+}

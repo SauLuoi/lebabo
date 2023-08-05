@@ -1,0 +1,174 @@
+.header-wrapper.pc {
+  @include flex(center, space-between);
+  border-bottom: 1px solid #ececec;
+  position: relative;
+
+  .logo {
+    width: 147px;
+    height: 43px;
+    margin: 18px 15px 0 20px;
+    text-indent: -9999px;
+  }
+
+  .header-inner {
+    width: 100%;
+    border-left: 1px solid #ececec;
+    @include flex(center, space-between);
+
+    &_main {
+      width: 100%;
+
+      .header-actions {
+        border-bottom: 1px solid #ececec;
+        @include flex(center, space-between);
+
+        > *:not(:first-child) {
+          border-left: 1px solid #ebebeb;
+        }
+
+        .search-new {
+          width: -webkit-fill-available;
+          position: relative;
+
+          form {
+            margin-bottom: 0;
+
+            input[type="search"] {
+              width: 100%;
+              background: none;
+              padding-left: 50px;
+              border: none;
+              box-shadow: none;
+
+              &:focus, &:focus-visible, &:focus-within {
+                outline-color: #fdf5e600;
+              }
+            }
+
+            input[type="submit"] {
+              background: url("../images/ico/ico-search-dark.png");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 35%;
+              position: absolute;
+              left: 0;
+              height: 100%;
+            }
+          }
+        }
+
+        .newsletter-signup {
+          text-align: center;
+          line-height: 42px;
+          height: 42px;
+          width: 42px;
+        }
+
+        .login {
+          width: 210px;
+          text-align: center;
+          line-height: 42px;
+          height: 42px;
+
+          a {
+            display: block;
+            padding: 0 13px;
+
+            span {
+              margin-left: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .shopping-bag {
+      height: 80px;
+      border-left: 1px solid #ebebeb;
+      text-align: center;
+      background-position: center;
+      @include flex(center, center);
+      @media (min-width: 1024px) {
+        width: 125px;
+      }
+
+      .shopping-bag-count {
+        z-index: 2;
+        position: absolute;
+        font-size: 16px;
+        font-weight: normal;
+        padding-left: 45px;
+        padding-top: 5px;
+        font-style: oblique;
+      }
+    }
+  }
+}
+
+.header-wrapper.mb {
+  border-bottom: 1px solid #ececec;
+
+  .main {
+    @include flex(center, space-between);
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+    height: 81px;
+
+    &-logo {
+      width: 100%;
+      border-right: solid 1px #ececec;
+      border-left: 1px solid #e5e5e5;
+      flex: 2;
+      height: 100%;
+
+      .logo {
+        img {
+          width: 50%;
+          margin: 0 auto;
+          padding: 15px;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+
+    .action-buttons {
+      @include flex(center, center);
+      min-width: 81px;
+
+      > span {
+        margin-left: 5px;
+        //min-width: 70px;
+        height: auto;
+        @include flex(center, center);
+
+        .shopping-bag {
+          position: relative;
+          .shopping-bag-count {
+            z-index: 2;
+            position: absolute;
+            font-size: 13px;
+            font-weight: normal;
+            font-style: oblique;
+            display: block;
+            text-align: center;
+            width: 100%;
+            padding-top: 3px;
+          }
+        }
+      }
+
+      .login {
+        a {
+          font-size: 0;
+
+          .ico-account {
+            width: 18px;
+            height: 21px;
+            background-size: 12px 17px;
+          }
+        }
+      }
+    }
+  }
+}

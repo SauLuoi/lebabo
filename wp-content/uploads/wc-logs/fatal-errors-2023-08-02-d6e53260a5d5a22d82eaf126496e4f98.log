@@ -1,0 +1,60 @@
+2023-08-02T02:59:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_template_part(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/resources/header/header-main.php on line 37 and at least 1 expected in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php:167
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/resources/header/header-main.php(37): get_template_part()
+#1 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(785): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', false, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/header.php(30): get_template_part('resources/heade...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(783): require_once('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', true, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/page-home.php(5): get_header()
+#9 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template-loader.php(106): include('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-blog-header.php(19): require_once('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/lebabo/index.php(17): require('/Applications/X...')
+#12 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php on line 167
+
+2023-08-02T03:00:09+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/resources/header/header-main.php on line 37
+
+2023-08-02T03:00:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function get_template_part(), 0 passed in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/resources/header/header-main.php on line 37 and at least 1 expected in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php:167
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/resources/header/header-main.php(37): get_template_part()
+#1 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(785): require('/Applications/X...')
+#2 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', false, Array)
+#3 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/header.php(30): get_template_part('resources/heade...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(783): require_once('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', true, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/page-home.php(5): get_header()
+#9 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template-loader.php(106): include('/Applications/X...')
+#10 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-blog-header.php(19): require_once('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/lebabo/index.php(17): require('/Applications/X...')
+#12 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php on line 167
+
+2023-08-02T07:51:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function my_wp_nav_menu_objects(), 2 passed in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp-hook.php on line 308 and exactly 3 expected in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/functions.php:89
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/class-wp-hook.php(308): my_wp_nav_menu_objects(Array, Object(stdClass))
+#1 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/nav-menu-template.php(234): apply_filters('wp_nav_menu_obj...', Array, Object(stdClass))
+#3 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/resources/header/header-menu.php(3): wp_nav_menu(Object(stdClass))
+#4 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(785): require('/Applications/X...')
+#5 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', false, Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/resources/header/header-main.php(37): get_template_part('resources/heade...')
+#8 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(785): require('/Applications/X...')
+#9 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', false, Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/header.php(30): get_template_part('resources/heade...')
+#12 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(783): require_once('/Applications/X...')
+#13 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template.php(718): load_template('/Applications/X...', true, Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/page-home.php(5): get_header()
+#16 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-includes/template-loader.php(106): include('/Applications/X...')
+#17 /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-blog-header.php(19): require_once('/Applications/X...')
+#18 /Applications/XAMPP/xamppfiles/htdocs/lebabo/index.php(17): require('/Applications/X...')
+#19 {main}
+  thrown in /Applications/XAMPP/xamppfiles/htdocs/lebabo/wp-content/themes/storefront/functions.php on line 89
+

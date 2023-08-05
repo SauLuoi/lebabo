@@ -1,0 +1,31 @@
+a, button, input[type="submit"], input[type="button"], input[type="reset"], input[type="file"], input[type="image"], label[for] {
+  cursor: pointer;
+}
+
+html, body {
+  margin: 0 auto;
+  font-size: 13px;
+
+  * {
+    color: #333;
+  }
+}
+
+.clear:after {
+  content: '';
+  line-height: 0;
+  display: table;
+  clear: both;
+}
+
+.pc {
+  @media (max-width: 1023px) {
+    display: none !important;
+  }
+}
+
+.mb {
+  @media (min-width: 1024px) {
+    display: none !important;
+  }
+}

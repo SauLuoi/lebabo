@@ -1,0 +1,1432 @@
+[
+    {
+        "key": "group_607565705e6d1",
+        "title": "Info admin - Header - Footer - Socical - SMTP - Embed code",
+        "fields": [
+            {
+                "key": "field_60d92fbc334e3",
+                "label": "Info admin",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6435236927b4e",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_607565820f90c",
+                "label": "Logo Header",
+                "name": "h_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_60d937bb21037",
+                "label": "Logo Footer",
+                "name": "f_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_60d93090334e7",
+                "label": "Favicon",
+                "name": "favicon",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_60d93758144a5",
+                "label": "Slogan",
+                "name": "customer_slogan",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d92fd7334e4",
+                "label": "Address",
+                "name": "customer_address",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d92feb334e6",
+                "label": "Phone",
+                "name": "customer_phone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d92fde334e5",
+                "label": "Email",
+                "name": "customer_email",
+                "type": "email",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_60d938652103b",
+                "label": "MXH",
+                "name": "f_socical",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_63eef140cc391",
+                        "label": "Image",
+                        "name": "image",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "url",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_63eef151cc392",
+                        "label": "Link",
+                        "name": "link",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "https:\/\/"
+                    }
+                ]
+            },
+            {
+                "key": "field_608a1c3e5308d",
+                "label": "Header",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6435237327b4f",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_608a1c235308c",
+                "label": "Số điện thoại",
+                "name": "h_phone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6440e8aabeb62",
+                "label": "Logo",
+                "name": "h_logo",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6440e90cbeb63",
+                "label": "Menu Open",
+                "name": "h_menu_open",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6440e932beb64",
+                "label": "Menu Close",
+                "name": "h_menu_close",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_60d92f48334e1",
+                "label": "Footer",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6435237927b50",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60dae5e430dd0",
+                "label": "Tiêu đề form",
+                "name": "f_form_contact_title",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60dae60930dd1",
+                "label": "Chọn Form",
+                "name": "f_form_contact",
+                "type": "post_object",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "wpcf7_contact_form"
+                ],
+                "taxonomy": "",
+                "allow_null": 0,
+                "multiple": 0,
+                "return_format": "id",
+                "ui": 1
+            },
+            {
+                "key": "field_60d938d721040",
+                "label": "Copyright",
+                "name": "f_copyright",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_643775ea7b398",
+                "label": "Social Share",
+                "name": "f_social_share",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_643777647b399",
+                        "label": "Title",
+                        "name": "f_social_share_title",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_6437777e7b39a",
+                        "label": "Facebook",
+                        "name": "f_share_fb",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_643777a17b39b",
+                                "label": "Image",
+                                "name": "f_share_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "20",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_6437823aee09b",
+                                "label": "Url",
+                                "name": "f_share_url",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "80",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_64378263ee09c",
+                        "label": "Twitter",
+                        "name": "f_share_tw",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_64378263ee09d",
+                                "label": "Image",
+                                "name": "f_share_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "20",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_64378263ee09e",
+                                "label": "Url",
+                                "name": "f_share_url",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "80",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_64378283ee09f",
+                        "label": "Line",
+                        "name": "f_share_line",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_64378283ee0a0",
+                                "label": "Image",
+                                "name": "f_share_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "20",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_64378283ee0a1",
+                                "label": "Url",
+                                "name": "f_share_url",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "80",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_6438fe9f10790",
+                "label": "Official",
+                "name": "f_official",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_6438fe9f10795",
+                        "label": "Twitter",
+                        "name": "f_official_tw",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_6438fe9f10796",
+                                "label": "Text",
+                                "name": "f_official_text",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "30",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_6438fe9f10797",
+                                "label": "Url",
+                                "name": "f_official_url",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "70",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_6438ff1c1079b",
+                        "label": "Youtube",
+                        "name": "f_official_yt",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_6438ff1c1079c",
+                                "label": "Text",
+                                "name": "f_official_text",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "30",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
+                            },
+                            {
+                                "key": "field_6438ff1c1079d",
+                                "label": "Url",
+                                "name": "f_official_url",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "70",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_643901a4247c4",
+                "label": "Logo",
+                "name": "f_logo_second",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_643901ba247cb",
+                        "label": "Footer Logo",
+                        "name": "f_logo_main",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_64390415247cc",
+                                "label": "Logo",
+                                "name": "f_logo_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_64390450247cd",
+                                "label": "Url",
+                                "name": "f_logo_url",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    },
+                    {
+                        "key": "field_64390484247ce",
+                        "label": "Footer Logo Shochiku",
+                        "name": "f_logo_shochiku",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_64390484247cf",
+                                "label": "Logo",
+                                "name": "f_logo_image",
+                                "type": "image",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "return_format": "url",
+                                "preview_size": "medium",
+                                "library": "all",
+                                "min_width": "",
+                                "min_height": "",
+                                "min_size": "",
+                                "max_width": "",
+                                "max_height": "",
+                                "max_size": "",
+                                "mime_types": ""
+                            },
+                            {
+                                "key": "field_64390484247d0",
+                                "label": "Url",
+                                "name": "f_logo_url",
+                                "type": "url",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": ""
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "key": "field_60d92fb5334e2",
+                "label": "Socical",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6435237f27b51",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60d930e4334e8",
+                "label": "Socical Phone",
+                "name": "socical_phone",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Số điện thoại",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d9310f334e9",
+                "label": "Socical Zalo",
+                "name": "socical_zalo",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Số điện thoại",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d93125334ea",
+                "label": "Socical Messenger",
+                "name": "socical_messenger",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Link chat fanpage : m.me\/103616215275569",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d931d0334eb",
+                "label": "Socical Chat Facebook",
+                "name": "socical_chat_fb",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "SDK chat facebook",
+                "maxlength": "",
+                "rows": 6,
+                "new_lines": ""
+            },
+            {
+                "key": "field_60f6516b68cf3",
+                "label": "Socical Back to top",
+                "name": "socical_back_to_top",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Có hiện nút ko ?",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_616f863510646",
+                "label": "SMTP",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6435238527b52",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60d93285153c6",
+                "label": "SMTP Encryption",
+                "name": "smtp_encryption",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d93294153c7",
+                "label": "SMTP Port",
+                "name": "smtp_port",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d932b0153c9",
+                "label": "SMTP Username",
+                "name": "smtp_user",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60d932bb153ca",
+                "label": "SMTP Password",
+                "name": "smtp_pass",
+                "type": "password",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "placeholder": "",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_6168f0d6cef87",
+                "label": "Embed code",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6435238a27b53",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6168f0decef88",
+                "label": "Header",
+                "name": "insert_code_header",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 20,
+                "new_lines": ""
+            },
+            {
+                "key": "field_6168f0e8cef89",
+                "label": "Footer",
+                "name": "insert_code_footer",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 20,
+                "new_lines": ""
+            },
+            {
+                "key": "field_6440ec5c6ff4c",
+                "label": "Letter",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_6440ed8d6ff4d",
+                "label": "Image Text PC",
+                "name": "letter_text_pc",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6440edfc6ff4e",
+                "label": "Image Text SP",
+                "name": "letter_text_sp",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6440ee166ff4f",
+                "label": "Text Area",
+                "name": "letter_textarea",
+                "type": "textarea",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "60",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 3,
+                "new_lines": ""
+            },
+            {
+                "key": "field_6440ee616ff50",
+                "label": "Button",
+                "name": "letter_button",
+                "type": "group",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_6440ee746ff51",
+                        "label": "Text",
+                        "name": "letter_text",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_6440ee8c6ff52",
+                        "label": "Link",
+                        "name": "letter_link",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_6440eebd6ff53",
+                "label": "Akito image PC",
+                "name": "akito_image_pc",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_6440ef386ff54",
+                "label": "Akito image SP",
+                "name": "akito_image_sp",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "50",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "medium",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-settings"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "",
+        "show_in_rest": 0
+    }
+]
