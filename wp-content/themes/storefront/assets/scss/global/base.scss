@@ -19,8 +19,16 @@ html, body {
 }
 
 .pc {
-  @media (max-width: 1023px) {
-    display: none !important;
+  display: none !important;
+  @media (min-width: 1024px) {
+    display: flex !important;
+  }
+}
+
+.pc-block {
+  display: none !important;
+  @media (min-width: 1024px) {
+    display: block !important;
   }
 }
 
@@ -28,4 +36,12 @@ html, body {
   @media (min-width: 1024px) {
     display: none !important;
   }
+}
+
+.notice-error {
+  color: red;
+}
+
+.notice-success {
+  color: darkgreen;
 }

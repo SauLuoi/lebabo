@@ -14,9 +14,10 @@ if ($home_slide) {
                     $post_guid = $home_slide_product->guid;
                     $home_slide_feature = $slide['home_slide_feature'];
                     $home_slide_video = $slide['home_slide_video'];
+                    $home_slide_link = get_the_permalink($home_slide_product->ID);
                     ?>
                     <div class="slide">
-                        <a href="<?php echo $post_guid; ?>" class="gatracking" data-label="Promo - 1"
+                        <a href="<?php echo $home_slide_link; ?>" class="gatracking" data-label="Promo - 1"
                            data-category="Hero Desktop">
                             <?php if ($home_slide_video) { ?>
                                 <div class="slide-image slide-video pc">
@@ -35,7 +36,7 @@ if ($home_slide) {
                                     <h2><?php echo $post_title; ?></h2>
                                     <p>coming soon...</p>
                                     <div class="actions">
-                                        <a href="<?php echo $post_guid; ?>">View More</a>
+                                        <a href="<?php echo $home_slide_link; ?>">View More</a>
                                     </div><!-- /.actions -->
                                     <a href="city-exclusives-2023.html" class="slider-thumb-link gatracking"
                                        data-label="Promo - 1" data-category="Hero Desktop"></a>
@@ -63,7 +64,7 @@ if ($home_slide) {
                             <div class="actions">
                                 <span href="#">View More</span>
                             </div><!-- /.actions -->
-                            <a href="<?php echo $post_guid; ?>"
+                            <a href="<?php echo $home_slide_link; ?>"
                                class="slider-thumb-link gatracking homepage-link-btn"
                                data-label="Promo - 1"
                                data-category="Hero Desktop"

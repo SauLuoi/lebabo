@@ -1,7 +1,7 @@
 <?php
 $h_logo = get_field('h_logo', 'option');
 ?>
-<div class="header-wrapper pc">
+<div class="header-wrapper header-sticky pc">
     <a href="<?php echo bloginfo('url'); ?>" class="logo">
         <img src="<?php echo $h_logo; ?>" alt="<?php echo get_the_title(); ?>">
     </a>
@@ -28,7 +28,7 @@ $h_logo = get_field('h_logo', 'option');
                     </a>
                 </div>
                 <div class="login link-account">
-                    <a href="/front/app/account/home" class="secondary-link-btn" data-link-type="account">
+                    <a href="<?php bloginfo('url'); ?>/login" class="secondary-link-btn" data-link-type="account">
                         <i class="ico-account"></i>
                         <?php if(is_user_logged_in()) {
                             echo ' <span> ' .wp_get_current_user()->user_login . '</span>';
@@ -52,7 +52,7 @@ $h_logo = get_field('h_logo', 'option');
     </div><!-- /.header-inner -->
 </div>
 
-<div class="header-wrapper mb">
+<div class="header-wrapper header-sticky mb">
     <div class="main">
         <a href="javascript:void(0)" class="ico-menu active-menu"></a>
         <div class="main-logo">

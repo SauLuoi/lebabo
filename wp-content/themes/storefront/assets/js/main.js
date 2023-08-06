@@ -10,6 +10,61 @@ jQuery(window).on('load', function () {
 
 
 jQuery(document).ready(function (){
+    //sticky
+    if (jQuery('.header-wrapper.header-sticky').length) {
+        var prevWidth = jQuery(window).width();
+        var prevScrollY = -1;
+        var breakpoint = 1024;
+
+        prevWidth = prevWidth < breakpoint? breakpoint : 0;
+
+        function stickyHeaderUpdateHandler(testFunc) {
+            var $wrapper = jQuery('body > .wrapper');
+            var $header = jQuery('.header-wrapper.header-sticky');
+            var $headingArchivesProduct = jQuery('.archives-product .heading')
+            var $topBanner = jQuery('.top-banner');
+            var width = jQuery(window).width();
+            var scrollY = jQuery(window).scrollTop();
+            var heights = $topBanner.length && $topBanner.outerHeight();
+            var fixed;
+
+            if (!testFunc(heights)) {
+                return;
+            }
+
+            fixed = scrollY >= heights && width >= breakpoint;
+
+            $wrapper.css('padding-top', fixed? $header.outerHeight(true) + 'px' : '');
+            !fixed && $wrapper.scrollTop(0);
+            $header.toggleClass('fixed', fixed);
+            $headingArchivesProduct.toggleClass('fixed', fixed);
+        }
+
+        function handleResizeStickyHeader() {
+            var width = jQuery(window).width();
+
+            stickyHeaderUpdateHandler(function() {
+                return width < breakpoint && prevWidth >= breakpoint || width >= breakpoint && prevWidth < breakpoint;
+            });
+
+            prevWidth = width;
+        }
+
+        function handleScrollStickyHeader() {
+            var scrollY = jQuery(window).scrollTop();
+
+            stickyHeaderUpdateHandler(function(offset) {
+                return scrollY < offset && prevScrollY >= offset || scrollY >= offset && prevScrollY < offset;
+            });
+
+            prevScrollY = scrollY;
+        }
+
+        jQuery(window).on('resize', handleResizeStickyHeader);
+        jQuery(window).on('scroll', handleScrollStickyHeader);
+        handleResizeStickyHeader();
+    }
+
     //toggle menu item
    jQuery('li.menu-item-has-children').append(" <span class='toggleBtn'></span>");
    jQuery('.toggleBtn').click(function (){
@@ -21,6 +76,11 @@ jQuery(document).ready(function (){
     //toggle menu mobile
     jQuery('.active-menu').click(function (){
        jQuery('.mb .main-menu').slideToggle();
+    });
+
+    //footer
+    jQuery('.footer .footer-menu .footer-title').click(function(){
+        jQuery(this).parent('.menu-item').find('.menu-list').slideToggle();
     });
 
 

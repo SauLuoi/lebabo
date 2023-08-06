@@ -1,0 +1,110 @@
+.footer {
+  @media screen and (max-width: 992px) {
+    background: #fff;
+  }
+  .wrapper {
+    @include flex(start, space-between);
+    max-width: 1440px;
+    padding: 20px 0;
+    border-color: #ececec;
+    border-style: solid;
+    margin: 0 auto;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &-menu {
+    @include flex(start, space-between);
+    flex-wrap: wrap;
+    width: 100%;
+
+    .menu-item {
+      width: 25%;
+      margin-bottom: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      @media screen and (max-width: 768px) {
+        width: 50%;
+      }
+
+      @media screen and (max-width: 420px) {
+        width: 100%;
+        border-bottom: 1px solid #ececec;
+        padding: 20px;
+        margin-bottom: 0;
+      }
+
+      .menu-list {
+        @media screen and (max-width: 420px) {
+          display: none;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.02px;
+        color: #424242;
+        display: block;
+      }
+    }
+  }
+
+  &-subscribe {
+    flex: 0 1 36%;
+    width: 36%;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 420px) {
+      border-bottom: 1px solid #ececec;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: #6c6c6c;
+      opacity: 0.7;
+      font-size: 1.2rem;
+    }
+
+    input[type="email"] {
+      background: #fff;
+      line-height: 18px;
+      border: 1px solid #ececec;
+      padding: 15px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      padding: 5px 0 0 5px;
+      text-decoration: underline;
+    }
+  }
+
+  &-title {
+    display: block;
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    opacity: 1;
+
+    @media screen and (max-width: 420px) {
+      cursor: pointer;
+    }
+  }
+
+  &-link {
+    text-decoration: underline;
+  }
+}

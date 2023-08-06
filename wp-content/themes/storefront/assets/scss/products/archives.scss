@@ -1,0 +1,133 @@
+.archives-product {
+  .container {
+    max-width: 1467px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .heading {
+    padding: 15px 0;
+
+    .breadcrumb {
+      * {
+        font-size: 1.2rem;
+        color: #000;
+        padding-right: 5px;
+      }
+
+      a {
+        &::after {
+          content: '/';
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+
+  .fixed {
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    z-index: 2;
+    top: 81px;
+    left: 0;
+  }
+
+  .banner {
+    position: relative;
+
+    img {
+      filter: brightness(0.5);
+      width: 100%;
+      height: auto;
+    }
+
+    &-content {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-family: 'Magda', sans-serif;
+      font-weight: bold;
+      font-size: 3rem;
+      line-height: 1;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+
+  .list-products {
+    @include grid-repeat(4);
+    gap: 24px;
+    margin: 50px auto;
+
+    @media screen and (max-width: 1023px) {
+      @include grid-repeat(3);
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 450px) {
+      @include grid-repeat(2);
+      gap: 15px;
+    }
+
+    .item {
+      > div {
+        border: 1px solid #e6e7e6;
+
+        &:not(:first-of-type) {
+          padding: 6px;
+        }
+      }
+
+      .product-item-image {
+        width: 100%;
+      }
+
+      .product-item-title {
+        a {
+          color: #333;
+          font-weight: bold;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+        }
+      }
+
+      .product-item-action {
+        @include flex(center, space-between);
+
+        form {
+          margin-bottom: 0;
+        }
+
+        .single_add_to_cart_button {
+          background: none;
+          padding: 0;
+          color: #2f2f2f;
+          transition: all .3s;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .price {
+          &-regular {
+            text-decoration: line-through;
+            color: #4a4a4a;
+          }
+
+          &-current {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
