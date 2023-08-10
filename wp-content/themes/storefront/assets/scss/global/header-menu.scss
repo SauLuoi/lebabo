@@ -45,6 +45,7 @@
         .sub-menu {
           padding: 0 15px;
           margin: 0;
+          z-index: 999;
 
           li {
             padding: 15px 5px;
@@ -90,7 +91,6 @@
             visibility: visible;
             transition: all .1s;
             margin: 0;
-            z-index: 999;
 
             .nav-expand-column {
               & > * {

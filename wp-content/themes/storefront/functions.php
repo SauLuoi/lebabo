@@ -140,3 +140,62 @@ function format_money($amount, $currency = false)
     }
     return number_format($amount, 0, '.', '.');
 }
+
+// Pagination
+function core_paginationCustom($max_num_pages) {
+    echo '<div class="core-pagination">';
+
+    if ($max_num_pages > 1) {   // tổng số trang (10)
+        echo '<ul class="">';
+
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; // trang hiện tại (8)
+
+        //trang đầu
+        if ($paged > 1 ) {
+            echo '<li class="pagination-li"><a href="'.esc_url( get_pagenum_link( 1 ) ).'" class="pagination-a">
+            Trang đầu</a></li>';
+        }
+
+        //lùi 1 trang
+        if ($paged > 1) {
+            echo '<li class="pagination-li"><a href="'.esc_url( get_pagenum_link( $paged - 1 ) ).'" class="pagination-a">
+            «</a></li>';
+        }
+        if($paged > 5) {
+            echo " ...";
+        }
+
+        for($i= 1; $i <= $max_num_pages; $i++) {
+            // $half_total_links = floor( 5 / 2);
+            $half_total_links = 5;
+
+            $from = $paged - $half_total_links; // trang hiện tại - 2 (8-2= 6)
+            $to = $paged + $half_total_links;   // trang hiện tại + 2 (8+2 = 10)
+
+            if ($from < $i && $i < $to) {   // $form cách $to 3 số (từ 6 đến 10 là 7,8,9)
+                $class = $i == $paged ? 'active' : 'pagination-a';
+                echo '<li class="pagination-li "><a href="'.esc_url( get_pagenum_link( $i ) ).'" class="'.$class.'">'.$i.'</a></li>';
+            }
+        }
+
+        //tiến 1 trang
+        if ($paged + 1 <= $max_num_pages) {
+            echo '<li class="pagination-li"><a href="'.esc_url( get_pagenum_link( $paged + 1 ) ).'" class="pagination-a">
+            »</a></li>';
+        }
+
+        if($paged < ($max_num_pages - 5)) {
+            echo " ...";
+        }
+
+        //trang cuối
+        if ($paged < ($max_num_pages) ) {
+            echo '<li class="pagination-li"><a href="'.esc_url( get_pagenum_link( $max_num_pages ) ).'" class="pagination-a">
+            Trang cuối </a></li>';
+        }
+
+        echo '</ul>';
+    }
+
+    echo '</div>';
+}

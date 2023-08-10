@@ -164,5 +164,16 @@ jQuery(document).ready(function (){
             }, 200);*/
         });
     }
+
+    function setHeightProduct() {
+        var product = jQuery(".list-products .item .product-item-image");
+        var widthProduct = product.width();
+        product.height(widthProduct);
+    }
+
+    jQuery(window).resize(function(){
+        setHeightProduct();
+    });
+    setHeightProduct();
 });
 
