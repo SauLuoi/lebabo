@@ -35,6 +35,7 @@ $thumbnail_cat = wp_get_attachment_url($cat_id_thumb);
             <?php
             $args = array(
                 'post_status' => 'publish',
+                'posts_per_page' => 16,
                 'tax_query' => array(
                     array(
                         'taxonomy' => 'product_cat',
@@ -45,6 +46,8 @@ $thumbnail_cat = wp_get_attachment_url($cat_id_thumb);
                 )
             );
             $product_args = new WP_Query($args);
+
+            $max_num_pages = $product_args->max_num_pages;
             if ($product_args->have_posts()) {
                 while ($product_args->have_posts()) {
                     $product_args->the_post();
@@ -83,6 +86,7 @@ $thumbnail_cat = wp_get_attachment_url($cat_id_thumb);
                 <?php }
             } ?>
         </div>
+        <?php echo core_paginationCustom($max_num_pages); ?>
     </div>
 </div>
 
