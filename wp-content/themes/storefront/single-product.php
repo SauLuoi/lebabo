@@ -28,12 +28,18 @@ $gallery_id = $product->get_gallery_image_ids();
 $children = $product->get_children(); // get variations
 $attribute = $product->get_attributes();
 $attribute_default = $product->get_default_attributes();
-var_dump($attribute);
 ?>
 
 <div class="single-product">
     <div class="container">
+        <div class="main">
+            <div class="main-gallery">
 
+            </div>
+            <div class="main-info">
+
+            </div>
+        </div>
     </div>
 </div>
 
